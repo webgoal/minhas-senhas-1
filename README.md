@@ -59,14 +59,14 @@ docker-compose [imagem] logs
 #### Acessando a aplicação
 - Linux (sem docker-machine)
 ```sh
-echo "127.0.0.1 dev.amigox.net" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1 dev.minhassenhas.net" | sudo tee -a /etc/hosts > /dev/null
 ```
 - Mac / Linux com docker-machine
 ```sh
-echo "$(docker-machine ip default) dev.amigox.net" | sudo tee -a /etc/hosts > /dev/null
+echo "$(docker-machine ip default) dev.minhassenhas.net" | sudo tee -a /etc/hosts > /dev/null
 ```
 - Windows
-Adicione o ip do docker-machine seguido do host `dev.amigox.net` no arquivo `C:\Windows\System32\drivers\hosts`
+Adicione o ip do docker-machine seguido do host `dev.minhassenhas.net` no arquivo `C:\Windows\System32\drivers\hosts`
 
 ### Instalando novas gems
 
