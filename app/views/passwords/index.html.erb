@@ -1,1 +1,23 @@
 <h1>Minhas senhas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Nome</th>
+      <th>Password</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passwords.each do |p| %>
+      <tr>
+        <td><%= p.Url %></td>
+        <td><%= p.Nome %></td>
+        <td><%= p.Password %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

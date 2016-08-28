@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20160828125505) do
   create_table "senhas", force: :cascade do |t|
     t.string   "Nome"
     t.string   "Url"
-    t.string   "Senha"
+    t.string   "Password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
