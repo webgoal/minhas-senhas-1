@@ -15,9 +15,9 @@ class PasswordsController < ApplicationController
   end
 
   def create
-    @test = Test.new(test_params)
+    @password = Password.new(password_params)
 
-    if @test.save
+    if @password.save
       redirect_to 'index'
     else
       render 'new'
@@ -25,7 +25,7 @@ class PasswordsController < ApplicationController
   end
 
   def update
-    if @test.update(test_params)
+    if @password.update(password_params)
       redirect_to 'index'
     else
       render 'edit'
@@ -33,8 +33,7 @@ class PasswordsController < ApplicationController
   end
 
   def destroy
-    @test.destroy
-    end
+    @password.destroy
   end
 
   private
