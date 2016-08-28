@@ -1,7 +1,7 @@
 FactoryGirl.define do
-  factory :senha do
+  factory :password do
     Nome "MyString"
     Url "MyString"
-    Senha "MyString"
+    Password "MyString"
   end
 end
