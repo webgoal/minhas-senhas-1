@@ -1,5 +1,8 @@
 <h1>Minhas senhas</h1>
 
+
+
+<h2><%= link_to ˜Criar senha˜ passwords_new_path%></h2>
 <table>
   <thead>
     <tr>
@@ -12,9 +15,9 @@
   <tbody>
     <% @passwords.each do |p| %>
       <tr>
-        <td><%= p.Url %></td>
-        <td><%= p.Nome %></td>
-        <td><%= p.Password %></td>
+        <td><%= p.url %></td>
+        <td><%= p.user %></td>
+        <td><%= p.password %></td>
       </tr>
     <% end %>
   </tbody>
