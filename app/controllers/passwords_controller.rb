@@ -15,8 +15,7 @@ class PasswordsController < ApplicationController
   end
 
   def create
-    @password = Password.new(password_params)
-
+    @password = Password.new(params.require(:password).permit(:url, :user, :password))
     if @password.save
       redirect_to passwords_path
     else
