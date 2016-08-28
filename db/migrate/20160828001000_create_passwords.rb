@@ -5,7 +5,7 @@ class CreatePasswords < ActiveRecord::Migration
       p.string :user
       p.string :password
 
-      #p.timestamps null: false
+      #t.timestamps null: false
     end
   end
 end
