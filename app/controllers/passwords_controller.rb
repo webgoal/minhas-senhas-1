@@ -1,7 +1,7 @@
 class PasswordsController < ApplicationController
 
   def index
-    @passwords = Password.all
+    @passwords = Password.all.order(user: :asc)
   end
 
   def new
