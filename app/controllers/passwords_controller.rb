@@ -18,17 +18,17 @@ class PasswordsController < ApplicationController
     @password = Password.new(password_params)
 
     if @password.save
-      redirect_to 'index'
+      redirect_to passwords_path
     else
-      render 'new'
+      render new
     end
   end
 
   def update
     if @password.update(password_params)
-      redirect_to 'index'
+      redirect_to passwords_path
     else
-      render 'edit'
+      render edit
     end
   end
 
